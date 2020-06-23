@@ -1,5 +1,6 @@
 package com.isle.mapper;
 
+import com.isle.pojo.Colors;
 import com.isle.pojo.CunDang;
 import com.isle.pojo.CunDangLog;
 import com.isle.pojo.LongInfo;
@@ -42,5 +43,8 @@ public interface LongMapper {
 
     @Select("select * from long_msg where id = #{0}")
     LongInfo getLongCount(int id);
+
+    @Select("select * from long_colors where id = #{0}")
+    Colors getcolors(int id);
 
 }

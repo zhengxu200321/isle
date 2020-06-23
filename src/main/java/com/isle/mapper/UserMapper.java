@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
 import java.lang.Long;
+import java.util.Date;
 import java.util.List;
 
 public interface UserMapper {
@@ -85,4 +86,19 @@ public interface UserMapper {
     @Select("select steamid from user where steamid is not null")
     List<User> selAllUser();
 
+    /*查询所有的皮肤*/
+    @Select("select * from long_colors where steamid = #{0}")
+    List<Colors> selallcolorbysteamid(String steamid);
+
+    /*查询所有的皮肤*/
+    @Select("select count(id) as count from long_colors where steamid = #{0}")
+    Colors selallcolorbysteamidcount(String steamid);
+
+    /*删除皮肤*/
+    @Select("delete from long_colors where id = #{0}")
+    void delcolor(int id);
+
+    /*插入皮肤*/
+    @Select("insert into long_colors (steamid,color_name,save_person,save_time,SkinPaletteSection1,SkinPaletteSection2,SkinPaletteSection3,SkinPaletteSection4,SkinPaletteSection5,SkinPaletteSection6,SkinPaletteVariation) values (#{steamid},#{color_name},#{2},#{3},#{4},#{5},#{6},#{7},#{8},#{9},#{10})")
+    void insertcolor(String steamid, String color_name, String save_person, Date save_time,int SkinPaletteSection1,int SkinPaletteSection2,int SkinPaletteSection3,int SkinPaletteSection4,int SkinPaletteSection5,int SkinPaletteSection6,String SkinPaletteVariation);
 }
