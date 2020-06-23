@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="WebHLD-1.0 (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/WebHLD-1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
