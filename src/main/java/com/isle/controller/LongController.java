@@ -289,9 +289,11 @@ public class LongController {
         user = userService.selUsers(user);
         String id_s = request.getParameter("id");
         String zuobiao = request.getParameter("zuobiao");
+        String fuse = request.getParameter("fuse");
         int zuobiao_id = Integer.valueOf(zuobiao);
+        int fuse_id = Integer.valueOf(fuse);
         int id = Integer.valueOf(id_s);
-        return longService.qu(id, user,zuobiao_id);
+        return longService.qu(id, user,zuobiao_id,fuse_id);
     }
 
 
