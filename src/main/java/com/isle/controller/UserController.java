@@ -358,4 +358,63 @@ public class UserController {
         }
     }
 
+
+    /*获取的是所有的颜色*/
+    @RequestMapping(value = "getcolors",produces = "text/html; charset=utf-8")
+    @ResponseBody
+    public String getcolors(HttpServletRequest request, HttpServletResponse response,HttpSession session) {
+        User user = (User) session.getAttribute("user");
+        if(user==null){
+            return "请先登陆哦...";
+        }
+        String limit = request.getParameter("limit");
+        String page = request.getParameter("page");
+        int start_num = (Integer.valueOf(page) - 1) * Integer.valueOf(limit);
+        return userService.selColorsBySteamId(user.getSteamid());
+    }
+
+    /*删除肤色*/
+    @RequestMapping(value = "delcolor",produces = "text/html; charset=utf-8")
+    @ResponseBody
+    public String delcolor(HttpServletRequest request, HttpServletResponse response,HttpSession session) {
+        User user = (User) session.getAttribute("user");
+        if(user==null){
+            return "请先登陆哦...";
+        }
+        int id = Integer.valueOf(request.getParameter("id"));
+        userService.delColor(id);
+        return "该皮肤删除成功哦";
+    }
+    /*保存肤色*/
+    @RequestMapping(value = "savcolor",produces = "text/html; charset=utf-8")
+    @ResponseBody
+    public String savcolor(HttpServletRequest request, HttpServletResponse response,HttpSession session) {
+        User user = (User) session.getAttribute("user");
+        if(user==null){
+            return "请先登陆哦...";
+        }
+        String color_name = request.getParameter("color_name");
+        if(StringUtils.isBlank(color_name)){
+            return "对不起;肤色名字不可以为空";
+        }
+        String steamid = user.getSteamid();
+        int count = userService.selColorCount(steamid);
+        if(count>10){
+            return "对不起;最多保存10个肤色哦";
+        }
+        String longinfo = ReadUtil.getUserInfo(steamid);
+        if(StringUtils.isBlank(longinfo)){
+            return "对不起;您当前没有龙信息;无法保存当前肤色";
+        }
+        JSONObject jsonObject = JSONObject.fromObject(longinfo);
+        int SkinPaletteSection1 = jsonObject.getInt("SkinPaletteSection1");
+        int SkinPaletteSection2 = jsonObject.getInt("SkinPaletteSection2");
+        int SkinPaletteSection3 = jsonObject.getInt("SkinPaletteSection3");
+        int SkinPaletteSection4 = jsonObject.getInt("SkinPaletteSection4");
+        int SkinPaletteSection5 = jsonObject.getInt("SkinPaletteSection5");
+        int SkinPaletteSection6 = jsonObject.getInt("SkinPaletteSection6");
+        String SkinPaletteVariation = jsonObject.getString("SkinPaletteVariation");
+        userService.saveColor(steamid, user.getUser_name(), color_name, SkinPaletteSection1, SkinPaletteSection2, SkinPaletteSection3, SkinPaletteSection4, SkinPaletteSection5, SkinPaletteSection6, SkinPaletteVariation);
+        return "保存肤色成功哦";
+    }
 }
