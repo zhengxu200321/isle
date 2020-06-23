@@ -11,7 +11,7 @@ public interface LongService {
 
     String selkucunone(int id);
 
-    String qu(int id, User user, int zuobiao_id);
+    String qu(int id, User user, int zuobiao_id,int fuse);
 
     String cun_log(User user,int start_num,int limit);
 

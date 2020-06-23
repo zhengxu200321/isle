@@ -140,6 +140,11 @@ layui.define(mods,
                                 name: "龙的商店"
                             },
                             {
+                                path: "/user/colors",
+                                component: "dist/views/isleview/colors.html",
+                                name: "我的肤色"
+                            },
+                            {
                                 path: "/exception/403",
                                 component: "dist/views/exception/403.html",
                                 name: "403"

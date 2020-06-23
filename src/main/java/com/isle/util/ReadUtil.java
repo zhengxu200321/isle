@@ -25,6 +25,7 @@ public class ReadUtil {
 
 //    static String save_path = "C:\\isle\\steamcmd\\steamapps\\common\\TheIsleDedicatedServer\\TheIsle\\Saved\\Databases\\Survival\\Players\\";
     static String save_path = "D:\\isle\\steamcmd\\steamapps\\common\\The Isle Dedicated Server\\TheIsle\\Saved\\Databases\\Survival\\Players\\";
+//    static String save_path = "D:\\";
     public static String getUserInfo(String staemdid) {
         String json_str = "";
         try {

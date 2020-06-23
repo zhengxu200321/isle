@@ -2,6 +2,7 @@ package com.isle.service;
 
 import com.isle.pojo.*;
 
+import java.awt.*;
 import java.util.List;
 import java.util.Map;
 
@@ -42,4 +43,14 @@ public interface UserService {
     List<User> selAllUsers();
 
     LongInfo sellongById(int id);
+
+    String selColorsBySteamId(String steamid);
+    List<Colors> selColorsBySteamIdPojo(String steamid);
+
+    void delColor(int id);
+
+    void saveColor(String steamid,String user_name,String color_name,int SkinPaletteSection1,int SkinPaletteSection2,int SkinPaletteSection3,int SkinPaletteSection4,int SkinPaletteSection5,int SkinPaletteSection6,String SkinPaletteVariation);
+
+    int selColorCount(String steamid );
+
 }

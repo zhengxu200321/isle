@@ -18,6 +18,10 @@
 <html>
 <head>
     <base href=" <%=basePath%>">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Cache" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>JSD 无规则玩家后台</title>
@@ -30,6 +34,9 @@
 
 <body class="layui-layout-body kit-theme-default">
 <div class="layui-layout layui-layout-admin">
+
+
+
     <!-- header -->
     <div class="layui-header">
         <div class="layui-logo">
@@ -59,7 +66,7 @@
                     </a>
                 </li>
                 <li class="kit-item" id="">
-                    <a href="steam://connect/103.107.190.86:39999">
+                    <a href="steam://connect/103.114.100.101:39999">
                         <i class="layui-icon">&#xe60e;</i>
                         <span>进入游戏</span>
                     </a>
@@ -169,7 +176,7 @@
                         </ul>
                         <ul class="kit-menu-child layui-anim layui-anim-upbit">
                             <li class="kit-menu-item">
-                                <a href="steam://connect/103.107.190.86:39999">
+                                <a href="steam://connect/103.114.100.101:39999">
                                     <i class="layui-icon"></i>
                                     <span>进入游戏</span>
                                 </a>
@@ -198,6 +205,12 @@
                                 <a href="#/user/store">
                                     <i class="layui-icon"></i>
                                     <span>龙的商店</span>
+                                </a>
+                            </li>
+                            <li class="kit-menu-item">
+                                <a href="#/user/colors">
+                                    <i class="layui-icon"></i>
+                                    <span>我的肤色</span>
                                 </a>
                             </li>
                         </ul>
@@ -253,6 +266,7 @@ function getuser(){
         }
     });
 }
+
 
 </script>
 </body>

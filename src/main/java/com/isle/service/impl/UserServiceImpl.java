@@ -12,6 +12,7 @@ import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.awt.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -228,4 +229,45 @@ public class UserServiceImpl implements UserService {
         return userMapper.selAllUser();
     }
 
+    @Override
+    public String selColorsBySteamId(String steamid) {
+        List<Colors> colors = userMapper.selallcolorbysteamid(steamid);
+        for (int i = 0; i < colors.size(); i++) {
+            colors.get(i).setSave_time_s(sdf.format(colors.get(i).getSave_time()));
+        }
+        JSONArray jsonArray = JSONArray.fromObject(colors);
+
+        for (int i = 0; i < jsonArray.size(); i++) {
+            jsonArray.getJSONObject(i).put("caozuo", "<button class=\"layui-btn layui-btn-sm layui-btn-radius layui-btn-danger\" onclick=\"delcolor(\'"+jsonArray.getJSONObject(i).getInt("id")+"')\">删除</button>");
+        }
+
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("data", jsonArray.toString());
+        jsonObject.put("code", 0);
+        jsonObject.put("msg", "");
+        jsonObject.put("count", userMapper.selallcolorbysteamidcount(steamid).getCount());
+        return jsonObject.toString();
+    }
+
+    @Override
+    public void delColor(int id) {
+        userMapper.delcolor(id);
+    }
+
+    @Override
+    public void saveColor(String steamid, String user_name, String color_name, int SkinPaletteSection1, int SkinPaletteSection2, int SkinPaletteSection3, int SkinPaletteSection4, int SkinPaletteSection5, int SkinPaletteSection6, String SkinPaletteVariation) {
+        userMapper.insertcolor(steamid,color_name,user_name,new Date(),SkinPaletteSection1,SkinPaletteSection2,SkinPaletteSection3,SkinPaletteSection4,SkinPaletteSection5,SkinPaletteSection6,SkinPaletteVariation);
+    }
+
+
+    @Override
+    public List<Colors> selColorsBySteamIdPojo(String steamid) {
+        List<Colors> colors = userMapper.selallcolorbysteamid(steamid);
+        return colors;
+    }
+
+    @Override
+    public int selColorCount(String steamid) {
+        return userMapper.selallcolorbysteamidcount(steamid).getCount();
+    }
 }

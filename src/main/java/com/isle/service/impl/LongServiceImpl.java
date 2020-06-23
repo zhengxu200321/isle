@@ -16,10 +16,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 @Service
 public class LongServiceImpl implements LongService {
@@ -41,14 +38,36 @@ public class LongServiceImpl implements LongService {
 
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
+    public static Map<String, Integer> map;
+
     @Override
     public String selKuCun(String steamd_id, int start_num, int limit) {
+
+        if(map==null||map.size()==0){
+            map = new HashMap<>();
+            List<Map<String,Object>> maps = DBHelper.getInstance().getDataMap("select name,is_teshu from long_msg");
+            for (int i = 0; i < maps.size(); i++) {
+                String name = (String) maps.get(i).get("name");
+                int is_teshu = (int) maps.get(i).get("is_teshu");
+                map.put(name, is_teshu);
+            }
+        }
+
         List<CunDang> cunDangs=  longMapper.selCunDang(steamd_id, start_num, limit);
+        List<Colors> colorsList = userService.selColorsBySteamIdPojo(steamd_id);
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("code", 0);
         jsonObject.put("msg", "");
         jsonObject.put("count", longMapper.selCunDangCount(steamd_id).getCount());
         JSONArray jsonArray = new JSONArray();
+
+        String colors = "";
+        for (int i = 0; i < colorsList.size(); i++) {
+            int cid = colorsList.get(i).getId();
+            String color_name = colorsList.get(i).getColor_name();
+            colors = colors + "<option value=\""+cid+"\">"+color_name+"</option>";
+        }
+
         for (int i = 0; i < cunDangs.size(); i++) {
             JSONObject jsonObject1 = new JSONObject();
             jsonObject1.put("name", cunDangs.get(i).getName());
@@ -57,6 +76,16 @@ public class LongServiceImpl implements LongService {
             jsonObject1.put("steam_id", cunDangs.get(i).getSteam_id());
             jsonObject1.put("user_name", cunDangs.get(i).getUser_name());
             jsonObject1.put("remark", cunDangs.get(i).getRemark());
+            if(map.get(cunDangs.get(i).getName())==1){
+                jsonObject1.put("fuse","<select name=\"fuse"+cunDangs.get(i).getId() +"\" id=\"fuse"+cunDangs.get(i).getId() +"\" lay-verify=\"required\">\n" +
+                        "            <option value=\"0\">特殊龙不可以选肤色</option>\n" +
+                        "        </select>");
+            }else {
+                jsonObject1.put("fuse","<select name=\"fuse"+cunDangs.get(i).getId() +"\" id=\"fuse"+cunDangs.get(i).getId() +"\" lay-verify=\"required\">\n" +
+                        "            <option value=\"0\">默认</option>\n" +
+                        colors+
+                        "        </select>");
+            }
             jsonObject1.put("zuobiao", "<input type=\"radio\" name=\"zuobiao"+cunDangs.get(i).getId()+"\" value=\"1\" title=\"随机\">\n" +
                     "      <input type=\"radio\" name=\"zuobiao"+cunDangs.get(i).getId()+"\" value=\"0\" title=\"原地\" checked>");
             jsonObject1.put("caozuo", "<button class=\"layui-btn layui-btn-sm layui-btn-radius layui-btn-normal\" onclick=\"selLong(\'"+cunDangs.get(i).getId()+"\')\">查看</button><button class=\"layui-btn layui-btn-sm layui-btn-radius layui-btn-normal\" onclick=\"qu(\'"+cunDangs.get(i).getId()+"\')\">取龙</button>");
@@ -73,7 +102,7 @@ public class LongServiceImpl implements LongService {
     }
 
     @Override
-    public String qu(int id, User user, int zuobiao_id) {
+    public String qu(int id, User user, int zuobiao_id,int fuse) {
         CunDang selcundangone = longMapper.selcundangone(id);
         int point = selcundangone.getPoint();
         int user_point = user.getPoint();
@@ -98,10 +127,19 @@ public class LongServiceImpl implements LongService {
             JSONObject jsonObject = JSONObject.fromObject(info);
             zuobiao = jsonObject.getString("Location_Thenyaw_Island");
         }
-
         String info = selcundangone.getInfo();
         JSONObject jsonObject = JSONObject.fromObject(info);
         jsonObject.put("Location_Thenyaw_Island", zuobiao);
+        if(fuse!=0){
+            Colors colors = longMapper.getcolors(fuse);
+            jsonObject.put("SkinPaletteSection1", colors.getSkinPaletteSection1());
+            jsonObject.put("SkinPaletteSection2", colors.getSkinPaletteSection2());
+            jsonObject.put("SkinPaletteSection3", colors.getSkinPaletteSection3());
+            jsonObject.put("SkinPaletteSection4", colors.getSkinPaletteSection4());
+            jsonObject.put("SkinPaletteSection5", colors.getSkinPaletteSection5());
+            jsonObject.put("SkinPaletteSection6", colors.getSkinPaletteSection6());
+            jsonObject.put("SkinPaletteVariation", colors.getSkinPaletteVariation());
+        }
         ReadUtil.writeUserInfo(user.getSteamid(), jsonObject.toString());
 
         user_point = user_point - point;

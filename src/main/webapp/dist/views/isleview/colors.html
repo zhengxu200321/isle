@@ -1,0 +1,82 @@
+<div  class="layui-fluid" >
+    <div class="layui-col-md12">
+        <div class="layui-card">
+            <div class="layui-card-header" style="text-align:left">
+                <div class="layui-col-md4">
+                    <h2>我的肤色(最多保存11个哦)</h2>
+                </div>
+                <div class="layui-col-md8">
+                     <div class="layui-input-inline">
+                         <input id = "color_name" type="text" name="title" required  lay-verify="required"  autocomplete="off" placeholder="在此输入皮肤名字"  class="layui-input">
+                     </div>
+                    <div class="layui-input-inline">
+                        <button  class="layui-btn layui-btn-sm layui-btn-radius layui-btn-normal" onclick="savcolor()">保存肤色</button>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-card-body" style="text-align: center">
+                <table id = 'colortable' lay-data="{id: 'colortable'}" class="layui-table" lay-size="lg">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    getuser();
+    layui.use('table', function(){
+        var table = layui.table;
+        //第一个实例
+        table.render({
+            elem: '#colortable'
+            ,height: '600'
+            ,url: 'getcolors'//数据接口
+            ,page: true //开启分页
+            ,cols: [[ //表头
+                {field: 'steamid', title: 'SteamId', width : '20%',align:'center'}
+                ,{field: 'color_name', title: '肤色名字', width : '20%' ,align:'center'}
+                ,{field: 'save_time_s', title: '保存时间', width : '20%' ,align:'center'}
+                ,{field: 'save_person', title: '保存人', width : '20%' ,align:'center'}
+                ,{field: 'caozuo', title: '操作', width : '20%',align:'center'}
+            ]]
+        });
+    })
+
+
+    function delcolor(id){
+        $.ajax({
+            url: 'delcolor?id='+id,
+            method:'GET',
+            timeout : 30000,
+            success:function(result){
+                location.reload();
+                alert(result);
+            },error:function(dataa){alert("网络开了点小差(主页);可以联系下管理哦...");}
+            ,complete:function (XMLHttpRequest,status) {
+                if(status=='timeout'){//超时,status还有success,error等值的情况
+                    ajaxTimeoutTest.abort();
+                    alert("网络链接超时");
+                }
+            }
+        });
+    }
+
+    function savcolor(){
+        var color_name = $('#color_name').val();
+        $.ajax({
+            url: 'savcolor?color_name='+color_name,
+            method:'GET'    ,
+            timeout : 30000,
+            success:function(result){
+                location.reload();
+                alert(result);
+            },error:function(dataa){alert("网络开了点小差(主页);可以联系下管理哦...");}
+            ,complete:function (XMLHttpRequest,status) {
+                if(status=='timeout'){//超时,status还有success,error等值的情况
+                    ajaxTimeoutTest.abort();
+                    alert("网络链接超时");
+                }
+            }
+        });
+    }
+
+</script>

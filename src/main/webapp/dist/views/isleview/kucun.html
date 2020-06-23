@@ -91,10 +91,13 @@
 </div>
 </div>
 
+
+
+
+
+
 <script>
-
     getuser();
-
     layui.use('table', function(){
         var table = layui.table;
         //第一个实例
@@ -110,7 +113,8 @@
                 ,{field: 'steam_id' , title: 'SteamId', width : '15%',align:'center'}
                 ,{field: 'user_name', title: '操作用户名', width : '10%',align:'center'}
                 ,{field: 'zuobiao', title: '坐标(随机/原地)', width : '10%',align:'center'}
-                ,{field: 'remark', title: '备注', width : '20%',align:'center'}
+                ,{field: 'fuse', title: '肤色', width : '15%',align:'center'}
+                ,{field: 'remark', title: '备注', width : '5%',align:'center'}
                 ,{field: 'caozuo', title: '操作', width : '10%',align:'center'}
             ]]
         });
@@ -160,8 +164,9 @@
         }
         var zuobiaoname = 'zuobiao' + id;
         var zuobiao = $("input[name='"+zuobiaoname+"']:checked").val();
+        var options=$("#fuse"+id +" option:selected").val();
         $.ajax({
-            url: 'qu?id='+id+"&zuobiao="+zuobiao,
+            url: 'qu?id='+id+"&zuobiao="+zuobiao+"&fuse="+options,
             method:'GET'    ,
             timeout : 30000,
             success:function(result){
@@ -178,4 +183,27 @@
         });
     }
 
+    $(".layui-input-inline-sel").css('overflow','visible');
 </script>
+
+<style>
+    .layui-table-cell {
+        overflow: visible !important;
+    }
+    /* 使得下拉框与单元格刚好合适 */
+    td .layui-form-select{
+        margin-top: -10px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    /*解决下拉框被表格覆盖样式问题*/
+    .layui-form-select dl {
+        z-index: 9999;
+    }
+    .layui-table-box {
+        overflow: visible
+    }
+    .layui-table-body{
+        overflow:visible;
+    }
+</style>
