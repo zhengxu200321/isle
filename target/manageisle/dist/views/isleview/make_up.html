@@ -1,0 +1,106 @@
+<div  class="layui-fluid" >
+    <div class="layui-col-md12">
+        <div class="layui-card">
+            <div class="layui-card-header" style="text-align: center">
+                <h2>我的补偿</h2>
+            </div>
+            <div class="layui-card-body" style="text-align: center">
+                <table id = 'make_up' class="layui-table" lay-size="lg">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    getuser();
+    function lingqu(id,type) {
+        $.ajax({
+            url: 'lingqu_point?id='+id,
+            method:'GET'    ,
+            timeout : 30000,
+            dataType:"text",
+            success:function(result){
+                if(result.indexOf("message")!=-1){
+                    layer.msg("出了点小问题;联系下管理哦...");
+                }else {
+                    alert(result);
+                    $(".layui-laypage-btn").click();
+                    getusermake_up();
+                }
+
+            },error:function(dataa){alert("网络开了点小差(领取积分);可以联系下管理哦...");}
+            ,complete:function (XMLHttpRequest,status) {
+                if(status=='timeout'){//超时,status还有success,error等值的情况
+                    ajaxTimeoutTest.abort();
+                    alert("网络链接超时");
+                }
+            }
+        });
+    }
+
+    layui.use('table', function(){
+        var table = layui.table;
+        //第一个实例
+        table.render({
+            elem: '#make_up'
+            ,height: '600'
+            ,url: 'showBuChang' //数据接口
+            ,page: true //开启分页
+            ,cols: [[ //表头
+                {field: 'name', title: '补偿内容', width : '15%',align:'center'}
+                ,{field: 'type', title: '补偿类型', width : '8%' ,align:'center'}
+                ,{field: 'point', title: '点数', width : '4%' ,align:'center'}
+                ,{field: 'status', title: '状态', width : '8%',align:'center'}
+                ,{field: 'person', title: '经办人', width : '10%',align:'center'}
+                ,{field: 'release_time', title: '发放时间', width : '15%',align:'center'}
+                ,{field: 'exp_time', title: '到期时间', width : '15%',align:'center'}
+                ,{field: 'lingqu_time', title: '领取时间', width : '15%',align:'center'}
+                ,{field: 'button', title: '操作', width : '10%',align:'center'}
+            ]]
+        });
+    })
+
+    function getusermake_up(){
+        $.ajax({
+            url: 'users',
+            method:'GET'    ,
+            timeout : 30000,
+            dataType:"json",
+            success:function(result){
+                $('#point').text(result.point);
+                $('#game_name').text(result.user_name);
+                $('#steam_id').text(result.steamid);
+                $('#touxiang1').attr("src",result.image);
+                $('#touxiang2').attr("src",result.image);
+                if(result.is_sign==1){
+                    $('#sign').attr("class","layui-btn layui-btn-radius layui-btn-disabled");
+                    $('#sign').attr("onlick","");
+                    $('#sign_but').text("已签到");
+                }
+
+                $('#zunguibutton').hide();
+                $('#zhizunbutton').hide();
+
+                if(result.is_vip=="1"&&(result.vip_type=="1"||result.vip_type=="2")){
+                    $('#zunguibutton').show();
+                }
+                if(result.is_vip=="1"&&result.vip_type=="3"||result.vip_type=="4"){
+                    $('#zhizunbutton').show();
+                }
+
+
+                // $('#sig').attr("src",result.image);
+                $('#yesday_save').text(result.yesday_save);
+                $('#yesday_out').text(result.yesday_out);
+            },error:function(dataa){alert("网络开了点小差;可以联系下管理哦...");}
+            ,complete:function (XMLHttpRequest,status) {
+                if(status=='timeout'){//超时,status还有success,error等值的情况
+                    ajaxTimeoutTest.abort();
+                    alert("网络链接超时");
+                }
+            }
+        });
+    }
+
+
+</script>

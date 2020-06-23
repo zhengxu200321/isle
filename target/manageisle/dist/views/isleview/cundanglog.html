@@ -1,0 +1,35 @@
+<div  class="layui-fluid" >
+    <div class="layui-col-md12">
+        <div class="layui-card">
+            <div class="layui-card-header" style="text-align: center">
+                <h2>我的存档记录</h2>
+            </div>
+            <div class="layui-card-body" style="text-align: center">
+                <table id = 'cundanglog' class="layui-table" lay-size="lg">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    getuser();
+    layui.use('table', function(){
+        var table = layui.table;
+        //第一个实例
+        table.render({
+            elem: '#cundanglog'
+            ,height: '600'
+            ,url: 'cundanglog' //数据接口
+            ,page: true //开启分页
+            ,cols: [[ //表头
+                {field: 'steam_id', title: 'SteamId', width : '20%',align:'center'}
+                ,{field: 'name', title: '名字', width : '15%' ,align:'center'}
+                ,{field: 'name_china', title: '中文', width : '15%' ,align:'center'}
+                ,{field: 'type', title: '存/取', width : '15%' ,align:'center'}
+                ,{field: 'create_t', title: '操作时间', width : '20%' ,align:'center'}
+                ,{field: 'user_name', title: '操作人', width : '15%',align:'center'}
+
+            ]]
+        });
+    })
+</script>

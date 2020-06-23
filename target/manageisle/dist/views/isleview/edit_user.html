@@ -1,0 +1,107 @@
+<script>
+  function jujue() {
+    return false;
+  }
+</script>
+<div class="layui-fluid">
+  <div class="layui-row">
+    <div class="layui-col-xs12">
+      <div class="layui-card">
+        <div class="layui-card-header"><h1>编辑信息</h1></div>
+        <div class="layui-card-body">
+          <form id = "user_info" onsubmit="return jujue()" >
+<!--            <div class="layui-form-item">-->
+<!--              <label class="layui-form-label" for="user_name">用户名</label>-->
+<!--              <div class="layui-input-block">-->
+<!--                <input type="text" name="user_name" id = "user_name" required lay-verify="required" placeholder="请输入新的用户名(登陆使用)" autocomplete="off" class="layui-input">-->
+<!--              </div>-->
+<!--            </div>-->
+            <div class="layui-form-item">
+              <label class="layui-form-label" for="password">旧的密码</label>
+              <div class="layui-input-inline">
+                <input id = "password" type="password" name="password" required lay-verify="required" placeholder="请输入旧的密码" autocomplete="off" class="layui-input">
+              </div>
+              <div class="layui-form-mid layui-word-aux"></div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label" for="password">新的密码</label>
+              <div class="layui-input-inline">
+                <input id = "newpassword" type="password" name="newpassword" required lay-verify="required" placeholder="请输入新的密码" autocomplete="off" class="layui-input">
+              </div>
+              <div class="layui-form-mid layui-word-aux"></div>
+            </div>
+
+            <div class="layui-form-item layui-form-text">
+              <label class="layui-form-label" for="sign_info">个性签名</label>
+              <div class="layui-input-block">
+                  <textarea id = "sign_info" name="sign_info" placeholder="请在此输入您的个性签名;不超过15字" class="layui-textarea"></textarea>
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <div class="layui-input-block">
+                <button class="layui-btn xxx"  onclick="aaa()">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 脚本 -->
+<script>
+
+    // layui.use(['form'], function() {
+    //   var form = layui.form,
+    //           $ = layui.jquery;
+    //   form.render();
+    //   //监听提交
+    //   form.on('submit(formDemo)', function(data) {
+    getuser();
+
+    function aaa() {
+      var info = $("#sign_info").val();
+      if(info.length>15){
+        alert("个性签名不能超过15字哦")
+        // return false;
+      }else {
+        // var user_name = $("#user_name").val;
+        // if(user_name==""){
+        //   alert("用户名不能为空哦")
+        //   return false;
+        // }
+        var password = $("#password").val;
+        var new_password = $("#newpassword").val;
+        if(password==""||new_password==""){
+          alert("密码不能为空哦")
+          // return false;
+        }
+      }
+      alert("提交")
+      $.ajax({
+        url: 'edituser',
+        method:'POST',
+        dataType:'text',
+        data: $('#user_info').serialize(),
+        success:function(result){
+          layer.msg(result);
+        },error:function(dataa){alert("网络开了点小差(编辑个人信息);可以联系下管理哦...");}
+        ,complete:function (XMLHttpRequest,status) {
+          if(status=='timeout'){//超时,status还有success,error等值的情况
+            ajaxTimeoutTest.abort();
+            alert("网络链接超时");
+          }
+        }
+      });
+      // return false;
+      // });
+      // });
+    }
+
+
+</script>
+<!-- 样式 -->
+<style scoped>
+
+</style>

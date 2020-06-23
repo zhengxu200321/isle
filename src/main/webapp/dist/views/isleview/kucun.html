@@ -1,0 +1,181 @@
+<div  class="layui-fluid" >
+    <div class="layui-col-md12">
+        <div class="layui-card">
+            <div class="layui-card-header" style="text-align: center">
+                <h2>我的库存</h2>
+            </div>
+            <div class="layui-card-body" style="text-align: center">
+                <table id = 'kucun' class="layui-table" lay-size="lg">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div  id="modellong"style="display: none" class="layui-fluid">
+<div class="layui-row">
+    <div class="layui-col-md12">
+<!--        <div class="layui-card-header">-->
+<!--&lt;!&ndash;            <h2>当前库存龙的信息查看</h2>&ndash;&gt;-->
+<!--        </div>-->
+        <div class="layui-form-item">
+            <label class="layui-form-label" for="long_name1"><h3>恐龙</h3></label>
+            <div class="layui-input-block">
+                <input id = "long_name1" type="text" name="title" required  lay-verify="required" autocomplete="off" disabled class="layui-input">
+            </div>
+        </div>
+
+
+        <div class="layui-form-item">
+            <label class="layui-form-label" for="gender1"><h3>性别</h3></label>
+            <div class="layui-input-block">
+                <input id = "gender1" type="text" name="title" required  lay-verify="required" autocomplete="off" disabled class="layui-input">
+            </div>
+        </div>
+
+
+        <div class="layui-form-item">
+            <label class="layui-form-label" for="chengzhang1"><h3>成长</h3></label>
+            <div class="layui-input-block">
+                <input id = "chengzhang1" type="text" name="title" required  lay-verify="required" autocomplete="off" disabled class="layui-input">
+            </div>
+        </div>
+
+
+        <div class="layui-form-item">
+            <label class="layui-form-label" for="hunger1"><h3>饥饿</h3></label>
+            <div class="layui-input-block">
+                <input id = "hunger1" type="text" name="title" required  lay-verify="required" autocomplete="off" disabled class="layui-input">
+            </div>
+        </div>
+
+
+        <div class="layui-form-item">
+            <label class="layui-form-label" for="kouke1"><h3>口渴</h3></label>
+            <div class="layui-input-block">
+                <input id = "kouke1" type="text" name="title" required  lay-verify="required" autocomplete="off" disabled class="layui-input">
+            </div>
+        </div>
+
+
+        <div class="layui-form-item">
+            <label class="layui-form-label" for="tili1"><h3>体力</h3></label>
+            <div class="layui-input-block">
+                <input id = "tili1" type="text" name="title" required  lay-verify="required" autocomplete="off" disabled class="layui-input">
+            </div>
+        </div>
+
+
+        <div class="layui-form-item">
+            <label class="layui-form-label" for="jiankang1"><h3>健康</h3></label>
+            <div class="layui-input-block">
+                <input id = "jiankang1" type="text" name="title" required  lay-verify="required" autocomplete="off" disabled class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label" for="chuxie1"><h3>出血</h3></label>
+            <div class="layui-input-block">
+                <input id = "chuxie1" type="text" name="title" required  lay-verify="required" autocomplete="off" disabled class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label" for="zuobiao1"><h3>坐标</h3></label>
+            <div class="layui-input-block">
+                <input id = "zuobiao1" type="text" name="title" required  lay-verify="required" autocomplete="off" disabled class="layui-input">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+
+    getuser();
+
+    layui.use('table', function(){
+        var table = layui.table;
+        //第一个实例
+        table.render({
+            elem: '#kucun'
+            ,height: '600'
+            ,url: 'kucun' //数据接口
+            ,page: true //开启分页
+            ,cols: [[ //表头
+                {field: 'name', title: '英文名', width : '10%',align:'center'}
+                ,{field: 'name_china', title: '中文名', width : '10%' ,align:'center'}
+                ,{field: 'create_time', title: '存取时间', width : '15%' ,align:'center'}
+                ,{field: 'steam_id' , title: 'SteamId', width : '15%',align:'center'}
+                ,{field: 'user_name', title: '操作用户名', width : '10%',align:'center'}
+                ,{field: 'zuobiao', title: '坐标(随机/原地)', width : '10%',align:'center'}
+                ,{field: 'remark', title: '备注', width : '20%',align:'center'}
+                ,{field: 'caozuo', title: '操作', width : '10%',align:'center'}
+            ]]
+        });
+    })
+    
+    function selLong(kucunid) {
+
+        $.ajax({
+            url: 'kucunone?id='+kucunid,
+            method:'GET'    ,
+            timeout : 30000,
+            dataType:"json",
+            success:function(result){
+                $('#long_name1').val(result.CharacterClass);
+                $('#gender1').val(result.bGender);
+                $('#chengzhang1').val(result.Growth);
+                $('#hunger1').val(result.Hunger);
+                $('#kouke1').val(result.Thirst);
+                $('#tili1').val(result.Stamina);
+                $('#jiankang1').val(result.Health);
+                $('#chuxie1').val(result.BleedingRate);
+                $('#zuobiao1').val(result.Location_Thenyaw_Island);
+                layer.open({
+                    type:1,
+                    title:'当前库存龙信息查看',
+                    area:['40%','63%'],
+                    btn:false,
+                    shadeClose: true,
+                    maxmin:false,
+                    content:$('#modellong'),
+                    zIndex:layer.zIndex,
+                });
+            },error:function(dataa){alert("网络开了点小差(个人龙信息);可以联系下管理哦...");}
+            ,complete:function (XMLHttpRequest,status) {
+                if(status=='timeout'){//超时,status还有success,error等值的情况
+                    ajaxTimeoutTest.abort();
+                    alert("网络链接超时");
+                }
+            }
+        });
+    }
+
+
+    function qu(id) {
+        if(!confirm("请您确保游戏已经读秒下线否则存龙不成功")){
+            return;
+        }
+        var zuobiaoname = 'zuobiao' + id;
+        var zuobiao = $("input[name='"+zuobiaoname+"']:checked").val();
+        $.ajax({
+            url: 'qu?id='+id+"&zuobiao="+zuobiao,
+            method:'GET'    ,
+            timeout : 30000,
+            success:function(result){
+                alert(result);
+                getuser();
+                location.reload();
+            },error:function(dataa){alert("网络开了点小差(个人龙信息);可以联系下管理哦...");}
+            ,complete:function (XMLHttpRequest,status) {
+                if(status=='timeout'){//超时,status还有success,error等值的情况
+                    ajaxTimeoutTest.abort();
+                    alert("网络链接超时");
+                }
+            }
+        });
+    }
+
+</script>

@@ -1,0 +1,209 @@
+<div class="layui-fluid">
+    <div class="layui-row">
+        <div class="layui-col-md12">
+            <div class="layui-card-header">
+                <div class="layui-col-md4">
+                    <h2>当前龙的信息查看</h2>
+                </div>
+                <div class="layui-col-md4">
+                    我的当前状态 &nbsp;&nbsp;<font id="mystatus">未排队</font>
+                </div>
+                <div class="layui-col-md4">
+                    队列长度 &nbsp;&nbsp;<font id="queuelength">0</font>
+                </div>
+
+
+            </div>
+
+            <div class="layui-card-body">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" for="steam_id"><h3>SteamID</h3></label>
+                    <div class="layui-input-block">
+                        <input id = "steam_id" type="text" name="title" required  lay-verify="required" autocomplete="off" disabled class="layui-input">
+                    </div>
+                </div>
+
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label" for="long_name"><h3>恐龙</h3></label>
+                    <div class="layui-input-block">
+                        <input id = "long_name" type="text" name="title" required  lay-verify="required" autocomplete="off" disabled class="layui-input">
+                    </div>
+                </div>
+
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label" for="gender"><h3>性别</h3></label>
+                    <div class="layui-input-block">
+                        <input id = "gender" type="text" name="title" required  lay-verify="required" autocomplete="off" disabled class="layui-input">
+                    </div>
+                </div>
+
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label" for="chengzhang"><h3>成长</h3></label>
+                    <div class="layui-input-block">
+                        <input id = "chengzhang" type="text" name="title" required  lay-verify="required" autocomplete="off" disabled class="layui-input">
+                    </div>
+                </div>
+
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label" for="hunger"><h3>饥饿</h3></label>
+                    <div class="layui-input-block">
+                        <input id = "hunger" type="text" name="title" required  lay-verify="required" autocomplete="off" disabled class="layui-input">
+                    </div>
+                </div>
+
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label" for="kouke"><h3>口渴</h3></label>
+                    <div class="layui-input-block">
+                        <input id = "kouke" type="text" name="title" required  lay-verify="required" autocomplete="off" disabled class="layui-input">
+                    </div>
+                </div>
+
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label" for="tili"><h3>体力</h3></label>
+                    <div class="layui-input-block">
+                        <input id = "tili" type="text" name="title" required  lay-verify="required" autocomplete="off" disabled class="layui-input">
+                    </div>
+                </div>
+
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label" for="jiankang"><h3>健康</h3></label>
+                    <div class="layui-input-block">
+                        <input id = "jiankang" type="text" name="title" required  lay-verify="required" autocomplete="off" disabled class="layui-input">
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label" for="steam_id"><h3>出血</h3></label>
+                    <div class="layui-input-block">
+                        <input id = "chuxie" type="text" name="title" required  lay-verify="required" autocomplete="off" disabled class="layui-input">
+                    </div>
+                </div>
+
+                <!--            <div class="layui-form-item">-->
+                <!--                <label class="layui-form-label" for="xiuxi"><h3>休息</h3></label>-->
+                <!--                <div class="layui-input-block">-->
+                <!--                    <input id = "xiuxi" type="text" name="title" required  lay-verify="required" autocomplete="off" disabled class="layui-input">-->
+                <!--                </div>-->
+                <!--            </div>-->
+
+                <!--            <div class="layui-form-item">-->
+                <!--                <label class="layui-form-label" for="duantui"><h3>断退</h3></label>-->
+                <!--                <div class="layui-input-block">-->
+                <!--                    <input id = "duantui" type="text" name="title" required  lay-verify="required" autocomplete="off" disabled class="layui-input">-->
+                <!--                </div>-->
+                <!--            </div>-->
+                <div class="layui-form-item">
+                    <label class="layui-form-label" for="zuobiao"><h3>坐标</h3></label>
+                    <div class="layui-input-block">
+                        <input id = "zuobiao" type="text" name="title" required  lay-verify="required" autocomplete="off" disabled class="layui-input">
+                    </div>
+                </div>
+                <!--            <div class="layui-form-item">-->
+                <!--                <label class="layui-form-label" for="zuobiao"><h3>存龙备注</h3></label>-->
+                <!--                <div class="layui-input-block">-->
+                <!--                    <input id = "remark" type="text" name="title" required  lay-verify="required" placeholder="(方便自己标记哦 选填*)不可超过15字" autocomplete="off"  class="layui-input">-->
+                <!--                </div>-->
+                <!--            </div>-->
+                <div class="layui-form-item">
+                    <label class="layui-form-label" for="zuobiao"><h3></h3></label>
+                    <div class="layui-input-block">
+                        <button class="layui-btn layui-btn-lg layui-btn-radius layui-btn-normal" onclick="cun()">存龙</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    $.ajax({
+        url: 'getlong_info',
+        method:'GET'    ,
+        timeout : 30000,
+        dataType:"json",
+        success:function(result){
+            $('#steam_id').val(result.steam_id);
+            $('#long_name').val(result.CharacterClass);
+            $('#gender').val(result.bGender);
+            $('#chengzhang').val(result.Growth);
+            $('#hunger').val(result.Hunger);
+            $('#kouke').val(result.Thirst);
+            $('#tili').val(result.Stamina);
+            $('#jiankang').val(result.Health);
+            $('#chuxie').val(result.BleedingRate);
+            $('#zuobiao').val(result.Location_Thenyaw_Island);
+            getuser();
+        }
+
+    });
+
+    getqueue()
+
+    // setInterval("getqueue()",8000);
+
+    function getqueue(){
+        $.ajax({
+            url: 'getqueue',
+            method:'GET',
+            dataType:"json",
+            success:function(result){
+                var code = result.codes;
+                if(code=="0"){
+                    $('#queuelength').text(result.queuesize);
+                    var my = result.myqueue;
+                    if(my=="1"){
+                        $('#mystatus').text('排队中取龙中...请不要刷新');
+                    }else {
+                        $('#mystatus').text('未排队取龙');
+                    }
+                }
+            }
+        });
+    }
+
+
+
+
+    function cun() {
+        if(!confirm("请您确保游戏已经读秒下线否则存龙不成功")){
+            return;
+        }
+        var remark = $('#remark').val();
+        $.ajax({
+            url: 'cun?remark='+remark,
+            method:'GET'    ,
+            timeout : 30000,
+            success:function(result){
+                alert(result);
+                getuser();
+                location.reload();
+                // $('#steam_id').val();
+                // $('#long_name').val();
+                // $('#gender').val();
+                // $('#chengzhang').val();
+                // $('#hunger').val();
+                // $('#kouke').val();
+                // $('#tili').val();
+                // $('#jiankang').val();
+                // $('#chuxie').val();
+                // $('#zuobiao').val();
+                },error:function(dataa){alert("网络开了点小差(个人龙信息);可以联系下管理哦...");}
+            ,complete:function (XMLHttpRequest,status) {
+                if(status=='timeout'){//超时,status还有success,error等值的情况
+                    ajaxTimeoutTest.abort();
+                    alert("网络链接超时");
+                }
+            }
+        });
+    }
+
+</script>

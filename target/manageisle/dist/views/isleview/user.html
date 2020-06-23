@@ -1,0 +1,234 @@
+
+
+<div  class="layui-fluid" >
+    <div class="layui-row layui-col-space15" >
+        <div class="layui-col-md8">
+            <div class="layui-col-md12">
+                <div class="layui-row layui-col-space15">
+                    <div class="layui-col-md6" style="text-align: center">
+                        <div class="layui-card">
+                            <div class="layui-card-body" style="text-align: center;margin:0 auto">
+                                <div id="d1">
+                                    <img id = "touxiang2" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1590088773109&di=eb330d15a26dc660271444320366fe96&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F01%2F35%2F88%2F67573bfa8b3656f.jpg" alt="">
+                                </div>
+                                <!--                            <br><font size="4px" color="#a9a9a9">会员级别: <font id = 'vip'>普通用户</font></font>-->
+                                <br>
+                                <br><font size="4px" color="#a9a9a9">积分: <font id = 'point'> 0 </font> 分</font>
+                                <br><br>
+                                <button id = 'sign' onclick="sign()" class="layui-btn layui-btn-radius">&nbsp;&nbsp;<font id="sign_but">签到</font>&nbsp;&nbsp;</button>
+
+                                <button id = 'zunguibutton'class="layui-btn layui-btn-sm layui-btn-radius layui-btn-danger"  >&nbsp;&nbsp;<font id="zungui">尊贵VIP</font>&nbsp;&nbsp;</button>
+                                <button id = 'zhizunbutton' class="layui-btn layui-btn-radius layui-btn-sm layui-btn-warm" disabled>&nbsp;&nbsp;<font id="zhizun">至尊VIP</font>&nbsp;&nbsp;</button>
+                                <hr>
+                                <div>
+                                    <span><font size="2px" color="#a9a9a9">游戏名字</font></span>
+                                    <span><font id="game_name" size="2px" color="#a9a9a9">未获取到</font></span>
+                                </div>
+                                <hr>
+                                <div>
+                                    <span><font size="2px" color="#a9a9a9">SteamId</font></span>
+                                    <span><font id="steam_id" size="2px" color="#a9a9a9">请联系管理员 </font></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-md6 " style="text-align: center">
+                        <div class="layui-card">
+                            <div class="layui-card-body" style="text-align: center">
+                                <br>
+                                <h1><font id = "yesday_save" color="#6495ed">0</font> 条</h1>
+                                <h6><font size="1px" color="#a9a9a9">昨日存龙数</font> </h6>
+                                <br>
+                                <button class="layui-btn layui-btn-radius layui-btn-normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#/user/currendDargonInfo">我要存龙</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                            </div>
+                        </div>
+                        <div class="layui-card">
+                            <div class="layui-card-body">
+                                <div class="layui-card-body" style="text-align: center">
+
+                                    <br>
+                                    <h1><font id = "yesday_out"  color = #ffd700>0</font> 条</h1>
+                                    <h6><font size="1px" color="#a9a9a9">昨日取龙数</font> </h6>
+                                    <br>
+                                    <button class="layui-btn layui-btn-radius layui-btn-warm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#/user/kucun">我要取龙</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md12">
+                <div class="layui-row layui-col-space15">
+                    <div class="layui-card">
+                        <div class="layui-card-header" style="text-align: center">
+                            <h2>公告栏</h2>
+                        </div>
+                        <div class="layui-card-body" style="text-align: center;">
+                            <table id = 'gonggao'  lay-filter="test" class="layui-table" lay-skin="line">
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-md4">
+            <div class="layui-row layui-col-space15">
+                <div class="layui-col-md12 " style="text-align: center">
+                    <div class="layui-card">
+                        <div class="layui-card-header">
+                            <h2>用户积分排行榜</h2>
+                        </div>
+                        <div class="layui-card-body" id="pointsuser" style="overflow:auto; height: 700px" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<style type="text/css" media="screen">
+    #d1{
+        width: 100px;
+        height: 100px;
+        border: 1px solid blue;
+        border-radius: 100%;
+        overflow: hidden;
+        text-align: center;
+        margin:0 auto;
+    }
+    img {
+        max-height: 100%;
+    }
+</style>
+
+<script>
+    window.onload = getuser();
+    function getuser(){
+        $.ajax({
+            url: 'users',
+            method:'GET'    ,
+            timeout : 30000,
+            dataType:"json",
+            success:function(result){
+                $('#point').text(result.point);
+                $('#game_name').text(result.user_name);
+                $('#user_namess').text(result.user_name);
+                $('#steam_id').text(result.steamid);
+                $('#touxiang1').attr("src",result.image);
+                $('#touxiang2').attr("src",result.image);
+                if(result.is_sign==1){
+                    $('#sign').attr("class","layui-btn layui-btn-radius layui-btn-disabled");
+                    $('#sign').attr("onlick","");
+                    $('#sign_but').text("已签到");
+                }
+                $('#zunguibutton').hide();
+                $('#zhizunbutton').hide();
+                if(result.is_vip=="1"&&(result.vip_type=="1"||result.vip_type=="2")){
+                    $('#zunguibutton').show();
+                }
+                if(result.is_vip=="1"&&result.vip_type=="3"||result.vip_type=="4"){
+                    $('#zhizunbutton').show();
+                }
+
+                // $('#sig').attr("src",result.image);
+                $('#yesday_save').text(result.yesday_save);
+                $('#yesday_out').text(result.yesday_out);
+                layui.use('layer', function(){
+                    var layer = layui.layer;
+                    // layer.msg('欢迎登陆 '+result.user_name);
+                });
+            },error:function(dataa){alert("网络开了点小差(主页);可以联系下管理哦...");}
+            ,complete:function (XMLHttpRequest,status) {
+                if(status=='timeout'){//超时,status还有success,error等值的情况
+                    ajaxTimeoutTest.abort();
+                    alert("网络链接超时");
+                }
+            }
+        });
+    }
+    $.ajax({
+        url: 'userpoint',
+        method:'GET',
+        timeout : 30000,
+        dataType:"json",
+        success:function(result){
+            var html = '';
+            $.each(result,function (i,item) {
+                html += "<div class=\"layui-row\">\n" +
+                    "        <div class=\"layui-col-md2\">\n" +
+                    "        <img style=\"margin: 10%\" class=\"layui-nav-img\" src=\""+item.image+"\" alt=\"\">\n" +
+                    "        </div>\n" +
+                    "        <div  class=\"layui-col-md7\" style=\"text-align: left\">\n" +
+                    "        <span><font size=\"3px\" color=\"black\">"+item.user_name+"</font></span>\n" +
+                    "    <br><span><font size=\"1px\" color=\"#a9a9a9\">"+item.sign_info+"</font></span>\n" +
+                    "    </div>\n" +
+                    "    <div  class=\"layui-col-md3\" style=\"margin:0 auto;\" >\n" +
+                    "        <span ><font size=\"2px\" color=\"#a9a9a9\">积分:&nbsp;&nbsp;</font><font size=\"2px\" color=\"#a9a9a9\">"+item.point+"</font><font size=\"2px\" color=\"#a9a9a9\">&nbsp;&nbsp;分</font></span>\n" +
+                    "    </div>\n" +
+                    "    </div>";
+            })
+            $("#pointsuser").html(html);
+        },error:function(dataa){alert("网络开了点小差(获取用户积分);可以联系下管理哦...");}
+        ,complete:function (XMLHttpRequest,status) {
+            if(status=='timeout'){//超时,status还有success,error等值的情况
+                ajaxTimeoutTest.abort();
+                alert("网络链接超时");
+            }
+        }
+    });
+
+    function showGongGao(title,txt) {
+        layer.open({
+            anim: 4,
+            title: title
+            ,content: txt
+        });
+
+    }
+    layui.use('table', function(){
+        var table = layui.table;
+
+        //第一个实例
+        table.render({
+            elem: '#gonggao'
+            ,height: '300'
+            ,url: 'showGongGao' //数据接口
+            ,page: false //开启分页
+            ,skin: 'line'
+            ,cols: [[ //表头
+                {field: 'name', title: '名称', width : '25%',align:'center'}
+                ,{field: 'create_time', title: '发布时间', width : '25%' ,align:'center'}
+                ,{field: 'user_name', title: '发布人', width : '25%',align:'center'}
+                ,{field: 'button', title: '操作', width : '25%',align:'center'}
+            ]]
+        });
+
+    })
+    
+    function sign() {
+        $.ajax({
+            url: 'sign',
+            method:'GET'    ,
+            timeout : 30000,
+            dataType:"text",
+            success:function(result){
+                layer.msg(result);
+                getuser();
+            },error:function(dataa){alert("网络开了点小差;可以联系下管理哦...");}
+            ,complete:function (XMLHttpRequest,status) {
+                if(status=='timeout'){//超时,status还有success,error等值的情况
+                    ajaxTimeoutTest.abort();
+                    alert("网络链接超时");
+                }
+            }
+        });
+    }
+
+
+
+</script>
+
+</html>

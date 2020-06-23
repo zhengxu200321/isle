@@ -1,0 +1,64 @@
+<div  class="layui-fluid" >
+    <div class="layui-col-md12">
+        <div class="layui-card">
+            <div class="layui-card-header" style="text-align: center">
+                <h2>龙的商店</h2>
+            </div>
+            <div class="layui-card-body" style="text-align: center">
+                <table id = 'store' class="layui-table" lay-size="lg">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    getuser();
+    layui.use('table', function(){
+        var table = layui.table;
+        //第一个实例
+        table.render({
+            elem: '#store'
+            ,height: '800'
+            ,url: 'longstore' //数据接口
+            ,page: false //开启分页
+            ,cols: [[ //表头
+                {field: 'name', title: '英文名', width : '10%',align:'center'}
+                ,{field: 'name_china', title: '中文名', width : '10%' ,align:'center'}
+                ,{field: 'gender', title: '分数', width : '25%',align:'center'}
+                ,{field: 'sell_count', title: '已售出', width : '10%',align:'center'}
+                ,{field: 'gongmu', title: '公/母', width : '25%',align:'center'}
+                ,{field: 'caozuo', title: '操作', width : '20%',align:'center'}
+            ]]
+        });
+    })
+
+
+
+    function duihuan(id) {
+        if(!confirm("您确定要兑换这条龙吗?")){
+            return;
+        }
+        var gongmuname = 'gongmu' + id;
+        var gongmu = $("input[name='"+gongmuname+"']:checked").val();
+        $.ajax({
+            url: 'duihuan?id='+id+"&gongmu="+gongmu,
+            method:'GET'    ,
+            timeout : 30000,
+            success:function(result){
+                alert(result);
+                getuser();
+                location.reload();
+            },error:function(dataa){alert("网络开了点小差(个人龙信息);可以联系下管理哦...");}
+            ,complete:function (XMLHttpRequest,status) {
+                if(status=='timeout'){//超时,status还有success,error等值的情况
+                    ajaxTimeoutTest.abort();
+                    alert("网络链接超时");
+                }
+            }
+        });
+    }
+
+</script>
