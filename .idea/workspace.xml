@@ -7,802 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26da2f6b-b722-4fa7-b036-4a9f95118df8" name="Default Changelist" comment="第一次提交岛管理项目">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/WebHLD_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/WebHLD_1_0__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/manageisle.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/Roboot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/Task/SignTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/controller/CmdController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/controller/LongController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/controller/ManageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/exception/ExeptionSave.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/filter/UrlFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/mapper/LogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/mapper/LongMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/pojo/CunDang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/pojo/CunDangLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/pojo/GongGao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/pojo/LongInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/pojo/MakeUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/pojo/Url.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/pojo/UserLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/service/LogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/service/LongService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/service/impl/LogServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/service/impl/LongServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/util/DBHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/util/LogUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/util/LongUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/util/PublicUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/isle/util/ReadUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adminjsp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adminjsp/kitadmin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adminjsp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adminjsp/main.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adminjsp/manage_main.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/Login_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/kitadmin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/modules/layer/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/nprogress.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/theme/blue-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/theme/blue-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/theme/default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/theme/green-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/theme/green-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/theme/purple-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/theme/purple-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/theme/red-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/theme/red-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/docs/menu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/docs/mockjs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/docs/route.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/docs/tabs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/docs/utils.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/images/face/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/jquery插件库.url" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/kitadmin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/kit_modules/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/kit_modules/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/kit_modules/cascader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/kit_modules/component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/kit_modules/inputnumber.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/kit_modules/kit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/kit_modules/layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/kit_modules/lodash.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/kit_modules/menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/kit_modules/mockjs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/kit_modules/mockjsbase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/kit_modules/nprogress.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/kit_modules/route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/kit_modules/select.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/kit_modules/sidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/kit_modules/tabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/kit_modules/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/modules/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/modules/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/modules/element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/modules/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/modules/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/modules/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/modules/laydate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/modules/layedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/modules/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/modules/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/modules/laytpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/modules/mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/modules/rate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/modules/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/modules/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/modules/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/lay/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/layui.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/layui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/mockjs-config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/polyfill.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/app.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/cascader/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/exception/403.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/exception/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/exception/500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/inputnumber.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/isleview/cundanglog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/isleview/currentDragonInfo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/isleview/edit_user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/isleview/kucun.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/isleview/make_up.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/isleview/pointlog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/isleview/store.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/isleview/user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/anim.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/auxiliar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/badge.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/button.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/carousel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/code.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/flow.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/grid.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/laydate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/layer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/laypage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/laytpl.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/nav.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/panel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/progress.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/tab.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/table-element.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/table.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/temp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/timeline.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/upload.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/layui/util.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/select/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/setting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/table/teble.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/table/teble2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/table/teble3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/user/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/user/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/views/user/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dist/www.jq22.com.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/bjzz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/jsd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/Login_javascript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/css/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/css/modules/layer/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/font/iconfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/face/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/colorpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/laydate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/layedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/laytpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/rate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/transfer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/lay/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/layui.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/layui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/manageisle.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/Roboot.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/Task/SignTask.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/controller/CmdController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/controller/LongController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/controller/ManageController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/exception/ExeptionSave.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/filter/UrlFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/mapper/LogMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/mapper/LongMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/mapper/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/pojo/CunDang.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/pojo/CunDangLog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/pojo/GongGao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/pojo/LongInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/pojo/MakeUp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/pojo/Url.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/pojo/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/pojo/UserLog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/service/LogService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/service/LongService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/service/impl/LogServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/service/impl/LongServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/util/DBHelper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/util/LogUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/util/LongUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/util/PublicUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/isle/util/ReadUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/spring-mybatis.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/META-INF/manageisle.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/Roboot.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/Task/SignTask.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/controller/CmdController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/controller/LongController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/controller/ManageController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/exception/ExeptionSave.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/filter/UrlFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/mapper/LogMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/mapper/LongMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/mapper/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/pojo/CunDang.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/pojo/CunDangLog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/pojo/GongGao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/pojo/LongInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/pojo/MakeUp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/pojo/Url.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/pojo/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/pojo/UserLog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/service/LogService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/service/LongService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/service/impl/LogServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/service/impl/LongServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/util/DBHelper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/util/LogUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/util/LongUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/util/PublicUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/com/isle/util/ReadUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/classes/spring-mybatis.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/aspectjweaver-1.8.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/commons-beanutils-1.8.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/commons-codec-1.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/commons-collections-3.2.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/commons-collections4-4.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/commons-dbcp-1.2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/commons-fileupload-1.2.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/commons-io-2.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/commons-lang-2.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/commons-logging-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/commons-pool-1.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/curvesapi-1.04.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/ezmorph-1.0.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/fastjson-1.2.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/httpclient-4.5.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/httpcore-4.4.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/jackson-core-asl-1.9.13.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/jpinyin-1.1.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/json-lib-2.4-jdk15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/lombok-1.16.18.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/mybatis-3.2.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/mybatis-spring-1.2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/mysql-connector-java-5.1.30.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/nekohtml-1.9.16.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/poi-3.17-beta1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/poi-ooxml-3.17-beta1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/poi-ooxml-schemas-3.17-beta1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/serializer-2.7.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/slf4j-api-1.7.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/slf4j-log4j12-1.7.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/spring-aop-4.0.2.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/spring-beans-4.0.2.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/spring-context-4.0.2.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/spring-context-support-4.0.2.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/spring-core-4.0.2.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/spring-expression-4.0.2.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/spring-jdbc-4.0.2.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/spring-oxm-4.0.2.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/spring-test-4.0.2.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/spring-tx-4.0.2.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/spring-web-4.0.2.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/spring-webmvc-4.0.2.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/stax-api-1.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/xalan-2.7.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/xercesImpl-2.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/xml-apis-1.3.04.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/lib/xmlbeans-2.6.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/adminjsp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/adminjsp/kitadmin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/adminjsp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/adminjsp/main.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/adminjsp/manage_main.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/css/Login_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/kitadmin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/modules/layer/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/nprogress.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/theme/blue-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/theme/blue-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/theme/default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/theme/green-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/theme/green-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/theme/purple-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/theme/purple-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/theme/red-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/css/theme/red-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/docs/menu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/docs/mockjs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/docs/route.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/docs/tabs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/docs/utils.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/images/face/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/jquery插件库.url" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/kitadmin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/kit_modules/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/kit_modules/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/kit_modules/cascader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/kit_modules/component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/kit_modules/inputnumber.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/kit_modules/kit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/kit_modules/layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/kit_modules/lodash.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/kit_modules/menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/kit_modules/mockjs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/kit_modules/mockjsbase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/kit_modules/nprogress.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/kit_modules/route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/kit_modules/select.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/kit_modules/sidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/kit_modules/tabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/kit_modules/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/modules/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/modules/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/modules/element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/modules/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/modules/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/modules/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/modules/laydate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/modules/layedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/modules/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/modules/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/modules/laytpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/modules/mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/modules/rate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/modules/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/modules/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/modules/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/lay/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/layui.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/layui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/mockjs-config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/polyfill.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/app.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/cascader/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/exception/403.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/exception/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/exception/500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/inputnumber.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/isleview/cundanglog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/isleview/currentDragonInfo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/isleview/edit_user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/isleview/kucun.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/isleview/make_up.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/isleview/pointlog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/isleview/store.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/isleview/user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/anim.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/auxiliar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/badge.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/button.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/carousel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/code.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/flow.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/grid.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/laydate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/layer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/laypage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/laytpl.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/nav.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/panel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/progress.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/tab.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/table-element.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/table.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/temp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/timeline.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/upload.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/layui/util.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/select/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/setting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/table/teble.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/table/teble2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/table/teble3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/user/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/user/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/views/user/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/dist/www.jq22.com.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/image/arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/image/bjzz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/image/jsd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/js/Login_javascript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/css/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/css/modules/layer/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/font/iconfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/images/face/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/lay/modules/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/lay/modules/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/lay/modules/colorpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/lay/modules/element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/lay/modules/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/lay/modules/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/lay/modules/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/lay/modules/laydate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/lay/modules/layedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/lay/modules/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/lay/modules/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/lay/modules/laytpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/lay/modules/mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/lay/modules/rate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/lay/modules/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/lay/modules/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/lay/modules/transfer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/lay/modules/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/lay/modules/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/lay/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/layui.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/manageisle/layui/layui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -823,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/isle/Task/SignTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="95" column="38" lean-forward="true" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
+            <state relative-caret-position="98">
+              <caret line="74" column="24" lean-forward="true" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -833,13 +38,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/isle/util/ReadUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -913,18 +115,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/isle/controller/CmdController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/isle/controller/ManageController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-28">
@@ -992,6 +182,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -1285,7 +476,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1518,18 +709,32 @@
       <workItem from="1592317265392" duration="27519000" />
       <workItem from="1592413860477" duration="31866000" />
       <workItem from="1592730598276" duration="5923000" />
-      <workItem from="1592830568414" duration="7320000" />
+      <workItem from="1592830568414" duration="8857000" />
     </task>
+    <task id="LOCAL-00001" summary="第一次提交岛管理项目">
+      <created>1592883378976</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592883378976</updated>
+    </task>
+    <task id="LOCAL-00002" summary="第一次提交岛管理项目">
+      <created>1592883513381</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592883513381</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="365587000" />
+    <option name="totallyTimeSpent" value="367124000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-27" y="23" width="1680" height="953" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49684212" visible="true" weight="0.36813188" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49684212" visible="true" weight="0.36813188" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1554,7 +759,7 @@
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32988507" />
       <window_info anchor="bottom" id="Problems" order="15" />
-      <window_info active="true" anchor="bottom" id="Messages" order="16" visible="true" weight="0.3263647" />
+      <window_info anchor="bottom" id="Messages" order="16" visible="true" weight="0.3263647" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1676,16 +881,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar!/javax/servlet/Filter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/src.zip!/java/net/AbstractPlainSocketImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4770">
@@ -2082,10 +1277,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/dist/www.jq22.com.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/isle/Task/SignTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="95" column="38" lean-forward="true" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
+        <state relative-caret-position="98">
+          <caret line="74" column="24" lean-forward="true" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
