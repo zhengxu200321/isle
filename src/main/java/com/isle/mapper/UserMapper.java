@@ -99,6 +99,6 @@ public interface UserMapper {
     void delcolor(int id);
 
     /*插入皮肤*/
-    @Select("insert into long_colors (steamid,color_name,save_person,save_time,SkinPaletteSection1,SkinPaletteSection2,SkinPaletteSection3,SkinPaletteSection4,SkinPaletteSection5,SkinPaletteSection6,SkinPaletteVariation) values (#{steamid},#{color_name},#{2},#{3},#{4},#{5},#{6},#{7},#{8},#{9},#{10})")
+    @Select("insert into long_colors (steamid,color_name,save_person,save_time,SkinPaletteSection1,SkinPaletteSection2,SkinPaletteSection3,SkinPaletteSection4,SkinPaletteSection5,SkinPaletteSection6,SkinPaletteVariation) values (#{0},#{1},#{2},#{3},#{4},#{5},#{6},#{7},#{8},#{9},#{10})")
     void insertcolor(String steamid, String color_name, String save_person, Date save_time,int SkinPaletteSection1,int SkinPaletteSection2,int SkinPaletteSection3,int SkinPaletteSection4,int SkinPaletteSection5,int SkinPaletteSection6,String SkinPaletteVariation);
 }
